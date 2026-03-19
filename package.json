@@ -1,0 +1,38 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "- Playwright",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "webTests": "npx playwright test --grep @Web",
+    "APITests": "npx playwright test --grep @API",
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/identity": "^4.13.0",
+    "@azure/playwright": "^1.1.0",
+    "@cucumber/cucumber": "^12.5.0",
+    "@playwright/test": "^1.58.2",
+    "allure-playwright": "^2.15.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreytryzna/qa-playwright-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreytryzna/qa-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/andreytryzna/qa-playwright-tests#readme"
+}
