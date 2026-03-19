@@ -1,43 +1,44 @@
-# QA Tests
+# 🎭 Playwright QA Automation
 
-## Tools Used
-- Playwright
+This repository contains end-to-end tests built with **Playwright**.
 
-## Install dependencies
+## 🛠️ Tech Stack
+* **Framework:** [Playwright](https://playwright.dev/)
+* **Runner:** Playwright Test Runner
 
-npm install
+---
 
-## Run tests
-npx playwright test
+## 🚀 Getting Started
 
-## Runs the end-to-end tests visible
-npx playwright test --headed
-     
-## Starts the interactive UI mode.
-  npx playwright test --ui
-    
-## Runs the tests only on Desktop Chrome.
-  npx playwright test --project=chromium
-    
-## Runs the tests in a specific file.
-  npx playwright test example
-    
-## Runs the tests in debug mode.
-  npx playwright test llc.spec.js --debug
-    
+### 1. Installation
+Clone the repository and install dependencies:
 
-##  Create a new branch 
-git checkout -b feature/your-task-name
+npm install && npx playwright install --with-deps
 
-##  Make changes
-git status
-git add .
-git commit -m "Add: implemented validation logic"
-git push origin feature/your-task-name
+## 🧪 Running Tests
 
-##  Update Branch After Review (If Changes Requested)
+| Command | Description |
+| :--- | :--- |
+| `npx playwright test` | Runs all tests in **headless** mode |
+| `npx playwright test --headed` | Runs tests with a **visible** browser window |
+| `npx playwright test --ui` | Opens the **Interactive UI mode** |
+| `npx playwright test --project=chromium` | Runs tests only on **Desktop Chrome** |
+| `npx playwright test example` | Runs tests in a **specific file** |
+| `npx playwright test --debug` | Opens the **Inspector** to step through tests |
 
-git add .
-git commit -m "Fix: address review comments"
-git push
+---
 
+## 🌿 Contribution Workflow
+
+### 1. Create a Branch
+`git checkout -b feature/your-task-name`
+
+### 2. Commit & Push
+`git add .`  
+`git commit -m "feat: implemented validation logic"`  
+`git push origin feature/your-task-name`
+
+### 3. Update After Review
+`git add .`  
+`git commit -m "fix: address review comments"`  
+`git push`
