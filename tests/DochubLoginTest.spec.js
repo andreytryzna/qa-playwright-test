@@ -1,5 +1,5 @@
-const { test, expect } = require('@playwright/test');
-const { DochubLoginPage } = require('../pageobjects/DochubLoginPage');
+import { test, expect } from '@playwright/test';
+import { DochubLoginPage } from '../pageobjects/DochubLoginPage';
 
 test('Invalid login shows error message', async ({ page }) => {
     const loginPage = new DochubLoginPage(page);
