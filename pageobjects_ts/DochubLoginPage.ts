@@ -13,10 +13,6 @@ export class DochubLoginPage {
         this.signInButton = page.getByRole('button', { name: 'Sign in with password' });
     }
 
-    async goto() {
-        await this.page.goto('https://dochub.com/sign-in');
-    }
-
     async login(email: string, password: string) {
         await this.emailInput.fill(email);
         await this.passwordInput.fill(password);

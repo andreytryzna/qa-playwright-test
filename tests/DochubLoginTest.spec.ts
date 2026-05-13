@@ -1,11 +1,10 @@
-import { test, expect } from '@playwright/test';
-import { DochubLoginPage } from '../pageobjects_ts/DochubLoginPage';
+import { test, expect } from '../fixtures/baseTest';
 
-test('Invalid login shows error message', async ({ page }) => {
-    const loginPage = new DochubLoginPage(page);
+test('Invalid login shows error message', async ({ loginPage, mainPage }) => {
     
-    // 1. Open the login page
-    await loginPage.goto();
+    // 1. Open the main page and navigate to the login page
+    await mainPage.goto();
+    await mainPage.clickSignIn();
     
     // 2. Enter an invalid email and password
     await loginPage.login('invalid@email.com', 'wrongpassword');
