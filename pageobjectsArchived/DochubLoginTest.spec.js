@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { DochubLoginPage } from '../pageobjects/DochubLoginPage';
+import { DochubLoginPage } from './DochubLoginPage';
 
 test('Invalid login shows error message', async ({ page }) => {
     const loginPage = new DochubLoginPage(page);
