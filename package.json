@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "regression": "npx playwright test",
+    "allure:generate": "npx allure generate ./allure-results -o ./allure-report",
+    "allure:open": "npx allure open ./allure-report",
+    "allure:serve": "npx allure serve ./allure-results",
     "webTests": "npx playwright test --grep @Web",
     "APITests": "npx playwright test --grep @API",
     "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari"
@@ -19,6 +22,7 @@
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.7.0",
+    "allure": "^3.14.3",
     "allure-playwright": "^2.15.1",
     "eslint": "^10.3.0",
     "eslint-config-prettier": "^10.1.8",
